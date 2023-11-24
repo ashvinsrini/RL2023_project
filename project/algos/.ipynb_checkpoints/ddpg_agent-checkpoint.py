@@ -120,26 +120,31 @@ class DDPGAgent(BaseAgent):
         if observation.ndim == 1: observation = observation[None] # add the batch dimension
         x = torch.from_numpy(observation).float().to(self.device)
 
-        #if self.buffer_ptr < self.random_transition: # collect random trajectories for better exploration.
-            #action = torch.rand(self.action_dim)
-        #else:
+        if (self.buffer_ptr < self.random_transition) and (evaluation == False): # collect random trajectories for better exploration.
+            #print('selecting a random action, this should not happen during testing')
+            action = torch.rand(self.action_dim)
+        else:
             #expl_noise = 0.1 * self.max_action # the stddev of the expl_noise if not evaluation
-            
+            expl_noise = 0.3
             # TODO:
             ########## Your code starts here. ##########
             # Use the policy to calculate the action to execute
             # if evaluation equals False, add normal noise to the action, where the std of the noise is expl_noise
             # Hint: Make sure the returned action's shape is correct.
-        expl_noise = 0.3
-            # Use the policy to calculate the action to execute
-        action = self.pi(x)
  
+            # Use the policy to calculate the action to execute
+            action = self.pi(x)
+            #pdb.set_trace()
             # if evaluation equals False, add normal noise to the action, where the std of the noise is expl_noise
-        if not evaluation:
+            if not evaluation:
                 action = action + torch.normal(0, expl_noise, size=action.shape).to(self.device)
 
             # Clip the action to ensure it's within the range
-        action = torch.clamp(action, -self.max_action, self.max_action)
+            action = torch.clamp(action, -self.max_action, self.max_action)
+
+
+            ########## Your code ends here. ##########
+
 
 
             ########## Your code ends here. ##########       
