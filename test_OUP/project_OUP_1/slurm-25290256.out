@@ -1,0 +1,114 @@
+/share/apps/anaconda-ci/fgci-centos7-anaconda/software/anaconda/2023-04/e0d50272/lib/python3.10/site-packages/gymnasium/spaces/box.py:130: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  gym.logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+/home/sriniva3/RL_course/RL2023_project/project/utils/recorder.py:250: UserWarning: [33mWARN: Overwriting existing videos at /home/sriniva3/RL_course/RL2023_project/project/results/SandingEnvMiddle/ddpg/video/train folder (try specifying a different `video_folder` for the `RecordVideo` wrapper if this is not desired)[0m
+  logger.warn(
+/share/apps/anaconda-ci/fgci-centos7-anaconda/software/anaconda/2023-04/e0d50272/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:164: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting numpy array dtype to be float32, actual type: float64[0m
+  logger.warn(
+/share/apps/anaconda-ci/fgci-centos7-anaconda/software/anaconda/2023-04/e0d50272/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:188: UserWarning: [33mWARN: The obs returned by the `reset()` method is not within the observation space.[0m
+  logger.warn(f"{pre} is not within the observation space.")
+/share/apps/anaconda-ci/fgci-centos7-anaconda/software/anaconda/2023-04/e0d50272/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:300: UserWarning: [33mWARN: RGB-array rendering should return a numpy array, got <class 'list'>[0m
+  logger.warn(
+Moviepy - Building video /home/sriniva3/RL_course/RL2023_project/project/results/SandingEnvMiddle/ddpg/video/train/project-episode-0.mp4.
+Moviepy - Writing video /home/sriniva3/RL_course/RL2023_project/project/results/SandingEnvMiddle/ddpg/video/train/project-episode-0.mp4
+
+t:   0%|          | 0/1 [00:00<?, ?it/s, now=None]                                                  /share/apps/anaconda-ci/fgci-centos7-anaconda/software/anaconda/2023-04/e0d50272/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:164: UserWarning: [33mWARN: The obs returned by the `step()` method was expecting numpy array dtype to be float32, actual type: float64[0m
+  logger.warn(
+/share/apps/anaconda-ci/fgci-centos7-anaconda/software/anaconda/2023-04/e0d50272/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:188: UserWarning: [33mWARN: The obs returned by the `step()` method is not within the observation space.[0m
+  logger.warn(f"{pre} is not within the observation space.")
+Moviepy - Done !
+Moviepy - video ready /home/sriniva3/RL_course/RL2023_project/project/results/SandingEnvMiddle/ddpg/video/train/project-episode-0.mp4
+Moviepy - Building video /home/sriniva3/RL_course/RL2023_project/project/results/SandingEnvMiddle/ddpg/video/train/project-episode-0.mp4.
+Moviepy - Writing video /home/sriniva3/RL_course/RL2023_project/project/results/SandingEnvMiddle/ddpg/video/train/project-episode-0.mp4
+
+t:   0%|          | 0/484 [00:00<?, ?it/s, now=None]t:   8%|▊         | 37/484 [00:00<00:01, 367.56it/s, now=None]t:  15%|█▌        | 74/484 [00:00<00:01, 220.42it/s, now=None]t:  21%|██        | 100/484 [00:00<00:01, 209.79it/s, now=None]t:  25%|██▌       | 123/484 [00:00<00:01, 205.18it/s, now=None]t:  30%|██▉       | 145/484 [00:00<00:01, 205.38it/s, now=None]t:  35%|███▍      | 167/484 [00:00<00:01, 205.16it/s, now=None]t:  39%|███▉      | 188/484 [00:00<00:01, 203.09it/s, now=None]t:  43%|████▎     | 209/484 [00:00<00:01, 201.09it/s, now=None]t:  48%|████▊     | 230/484 [00:01<00:01, 201.65it/s, now=None]t:  52%|█████▏    | 251/484 [00:01<00:01, 198.98it/s, now=None]t:  56%|█████▌    | 271/484 [00:01<00:01, 195.40it/s, now=None]t:  61%|██████    | 293/484 [00:01<00:00, 202.15it/s, now=None]t:  65%|██████▍   | 314/484 [00:01<00:00, 202.25it/s, now=None]t:  69%|██████▉   | 335/484 [00:01<00:00, 204.11it/s, now=None]t:  74%|███████▎  | 356/484 [00:01<00:00, 203.88it/s, now=None]t:  78%|███████▊  | 377/484 [00:01<00:00, 202.07it/s, now=None]t:  82%|████████▏ | 398/484 [00:01<00:00, 198.47it/s, now=None]t:  87%|████████▋ | 419/484 [00:02<00:00, 200.88it/s, now=None]t:  91%|█████████ | 440/484 [00:02<00:00, 197.45it/s, now=None]t:  95%|█████████▌| 460/484 [00:02<00:00, 197.96it/s, now=None]t:  99%|█████████▉| 480/484 [00:02<00:00, 195.10it/s, now=None]                                                               Moviepy - Done !
+Moviepy - video ready /home/sriniva3/RL_course/RL2023_project/project/results/SandingEnvMiddle/ddpg/video/train/project-episode-0.mp4
+Episode 0 Step 20 finished. Average episode return: 1.0
+Episode 100 Step 2020 finished. Average episode return: -0.06
+Episode 200 Step 4020 finished. Average episode return: 0.03
+Episode 300 Step 6020 finished. Average episode return: -0.08
+Episode 400 Step 8020 finished. Average episode return: 0.02
+Episode 500 Step 10020 finished. Average episode return: -0.08
+Episode 600 Step 12020 finished. Average episode return: 0.23
+Episode 700 Step 14020 finished. Average episode return: 0.35
+Episode 800 Step 16020 finished. Average episode return: 0.42
+Episode 900 Step 18020 finished. Average episode return: 0.25
+Moviepy - Building video /home/sriniva3/RL_course/RL2023_project/project/results/SandingEnvMiddle/ddpg/video/train/project-episode-1000.mp4.
+Moviepy - Writing video /home/sriniva3/RL_course/RL2023_project/project/results/SandingEnvMiddle/ddpg/video/train/project-episode-1000.mp4
+
+t:   0%|          | 0/590 [00:00<?, ?it/s, now=None]t:   5%|▌         | 32/590 [00:00<00:01, 319.07it/s, now=None]t:  11%|█         | 64/590 [00:00<00:02, 249.78it/s, now=None]t:  15%|█▌        | 90/590 [00:00<00:02, 226.08it/s, now=None]t:  19%|█▉        | 114/590 [00:00<00:02, 220.11it/s, now=None]t:  23%|██▎       | 137/590 [00:00<00:02, 211.94it/s, now=None]t:  27%|██▋       | 159/590 [00:00<00:02, 209.35it/s, now=None]t:  31%|███       | 182/590 [00:00<00:01, 214.16it/s, now=None]t:  35%|███▍      | 206/590 [00:00<00:01, 220.66it/s, now=None]t:  39%|███▉      | 231/590 [00:01<00:01, 225.50it/s, now=None]t:  43%|████▎     | 255/590 [00:01<00:01, 229.64it/s, now=None]t:  47%|████▋     | 279/590 [00:01<00:01, 212.94it/s, now=None]t:  51%|█████     | 301/590 [00:01<00:01, 207.74it/s, now=None]t:  55%|█████▍    | 324/590 [00:01<00:01, 210.01it/s, now=None]t:  59%|█████▉    | 349/590 [00:01<00:01, 220.98it/s, now=None]t:  63%|██████▎   | 372/590 [00:01<00:00, 222.01it/s, now=None]t:  68%|██████▊   | 399/590 [00:01<00:00, 231.20it/s, now=None]t:  72%|███████▏  | 423/590 [00:01<00:00, 231.63it/s, now=None]t:  76%|███████▌  | 447/590 [00:02<00:00, 226.88it/s, now=None]t:  80%|████████  | 472/590 [00:02<00:00, 231.14it/s, now=None]t:  84%|████████▍ | 496/590 [00:02<00:00, 220.76it/s, now=None]t:  88%|████████▊ | 519/590 [00:02<00:00, 220.81it/s, now=None]t:  92%|█████████▏| 542/590 [00:02<00:00, 217.77it/s, now=None]t:  96%|█████████▌| 564/590 [00:02<00:00, 203.21it/s, now=None]t:  99%|█████████▉| 585/590 [00:02<00:00, 198.24it/s, now=None]                                                               Moviepy - Done !
+Moviepy - video ready /home/sriniva3/RL_course/RL2023_project/project/results/SandingEnvMiddle/ddpg/video/train/project-episode-1000.mp4
+Episode 1000 Step 20020 finished. Average episode return: 0.35
+Episode 1100 Step 22020 finished. Average episode return: 0.35
+Episode 1200 Step 24020 finished. Average episode return: 0.41
+Episode 1300 Step 26020 finished. Average episode return: 0.45
+Episode 1400 Step 28020 finished. Average episode return: 0.57
+Episode 1500 Step 30020 finished. Average episode return: 0.58
+Episode 1600 Step 32020 finished. Average episode return: 0.51
+Episode 1700 Step 34020 finished. Average episode return: 0.61
+Episode 1800 Step 36020 finished. Average episode return: 0.56
+Episode 1900 Step 38020 finished. Average episode return: 0.68
+Moviepy - Building video /home/sriniva3/RL_course/RL2023_project/project/results/SandingEnvMiddle/ddpg/video/train/project-episode-2000.mp4.
+Moviepy - Writing video /home/sriniva3/RL_course/RL2023_project/project/results/SandingEnvMiddle/ddpg/video/train/project-episode-2000.mp4
+
+t:   0%|          | 0/527 [00:00<?, ?it/s, now=None]t:   5%|▌         | 28/527 [00:00<00:01, 277.41it/s, now=None]t:  11%|█         | 56/527 [00:00<00:02, 206.51it/s, now=None]t:  15%|█▍        | 78/527 [00:00<00:02, 202.95it/s, now=None]t:  19%|█▉        | 99/527 [00:00<00:02, 194.32it/s, now=None]t:  23%|██▎       | 121/527 [00:00<00:02, 200.14it/s, now=None]t:  27%|██▋       | 143/527 [00:00<00:01, 204.98it/s, now=None]t:  31%|███▏      | 165/527 [00:00<00:01, 207.08it/s, now=None]t:  35%|███▌      | 187/527 [00:00<00:01, 206.88it/s, now=None]t:  39%|███▉      | 208/527 [00:01<00:01, 207.61it/s, now=None]t:  44%|████▍     | 231/527 [00:01<00:01, 213.42it/s, now=None]t:  48%|████▊     | 253/527 [00:01<00:01, 206.62it/s, now=None]t:  52%|█████▏    | 274/527 [00:01<00:01, 202.90it/s, now=None]t:  56%|█████▌    | 295/527 [00:01<00:01, 203.98it/s, now=None]t:  60%|██████    | 318/527 [00:01<00:00, 210.11it/s, now=None]t:  65%|██████▍   | 340/527 [00:01<00:00, 205.61it/s, now=None]t:  69%|██████▉   | 363/527 [00:01<00:00, 209.80it/s, now=None]t:  73%|███████▎  | 386/527 [00:01<00:00, 214.67it/s, now=None]t:  77%|███████▋  | 408/527 [00:01<00:00, 214.73it/s, now=None]t:  82%|████████▏ | 430/527 [00:02<00:00, 209.07it/s, now=None]t:  86%|████████▌ | 451/527 [00:02<00:00, 208.75it/s, now=None]t:  90%|████████▉ | 472/527 [00:02<00:00, 202.90it/s, now=None]t:  94%|█████████▎| 494/527 [00:02<00:00, 205.91it/s, now=None]t:  98%|█████████▊| 515/527 [00:02<00:00, 202.80it/s, now=None]                                                               Moviepy - Done !
+Moviepy - video ready /home/sriniva3/RL_course/RL2023_project/project/results/SandingEnvMiddle/ddpg/video/train/project-episode-2000.mp4
+Episode 2000 Step 40020 finished. Average episode return: 0.58
+Episode 2100 Step 42020 finished. Average episode return: 0.54
+Episode 2200 Step 44020 finished. Average episode return: 0.54
+Episode 2300 Step 46020 finished. Average episode return: 0.62
+Episode 2400 Step 48020 finished. Average episode return: 0.88
+Episode 2500 Step 50020 finished. Average episode return: 0.59
+Episode 2600 Step 52020 finished. Average episode return: 0.68
+Episode 2700 Step 54020 finished. Average episode return: 0.59
+Episode 2800 Step 56020 finished. Average episode return: 0.61
+Episode 2900 Step 58020 finished. Average episode return: 0.71
+Moviepy - Building video /home/sriniva3/RL_course/RL2023_project/project/results/SandingEnvMiddle/ddpg/video/train/project-episode-3000.mp4.
+Moviepy - Writing video /home/sriniva3/RL_course/RL2023_project/project/results/SandingEnvMiddle/ddpg/video/train/project-episode-3000.mp4
+
+t:   0%|          | 0/491 [00:00<?, ?it/s, now=None]t:   8%|▊         | 38/491 [00:00<00:01, 375.49it/s, now=None]t:  15%|█▌        | 76/491 [00:00<00:01, 222.34it/s, now=None]t:  21%|██        | 102/491 [00:00<00:01, 200.45it/s, now=None]t:  25%|██▌       | 124/491 [00:00<00:01, 198.90it/s, now=None]t:  30%|██▉       | 145/491 [00:00<00:01, 191.99it/s, now=None]t:  34%|███▎      | 165/491 [00:00<00:01, 186.75it/s, now=None]t:  38%|███▊      | 187/491 [00:00<00:01, 193.13it/s, now=None]t:  42%|████▏     | 207/491 [00:01<00:01, 188.93it/s, now=None]t:  46%|████▋     | 228/491 [00:01<00:01, 193.44it/s, now=None]t:  51%|█████     | 248/491 [00:01<00:01, 190.59it/s, now=None]t:  55%|█████▍    | 268/491 [00:01<00:01, 187.02it/s, now=None]t:  58%|█████▊    | 287/491 [00:01<00:01, 184.06it/s, now=None]t:  62%|██████▏   | 306/491 [00:01<00:01, 184.92it/s, now=None]t:  66%|██████▋   | 326/491 [00:01<00:00, 189.04it/s, now=None]t:  70%|███████   | 346/491 [00:01<00:00, 187.24it/s, now=None]t:  74%|███████▍  | 365/491 [00:01<00:00, 182.42it/s, now=None]t:  78%|███████▊  | 384/491 [00:01<00:00, 183.43it/s, now=None]t:  82%|████████▏ | 403/491 [00:02<00:00, 181.15it/s, now=None]t:  86%|████████▌ | 422/491 [00:02<00:00, 175.17it/s, now=None]t:  90%|████████▉ | 441/491 [00:02<00:00, 178.91it/s, now=None]t:  94%|█████████▎| 460/491 [00:02<00:00, 180.57it/s, now=None]t:  98%|█████████▊| 480/491 [00:02<00:00, 183.13it/s, now=None]                                                               Moviepy - Done !
+Moviepy - video ready /home/sriniva3/RL_course/RL2023_project/project/results/SandingEnvMiddle/ddpg/video/train/project-episode-3000.mp4
+Episode 3000 Step 60020 finished. Average episode return: 0.67
+Episode 3100 Step 62020 finished. Average episode return: 0.84
+Episode 3200 Step 64020 finished. Average episode return: 0.79
+Episode 3300 Step 66020 finished. Average episode return: 0.8
+Episode 3400 Step 68020 finished. Average episode return: 0.77
+Episode 3500 Step 70020 finished. Average episode return: 0.66
+Episode 3600 Step 72020 finished. Average episode return: 0.66
+Episode 3700 Step 74020 finished. Average episode return: 0.6
+Episode 3800 Step 76020 finished. Average episode return: 0.76
+Episode 3900 Step 78020 finished. Average episode return: 0.61
+Moviepy - Building video /home/sriniva3/RL_course/RL2023_project/project/results/SandingEnvMiddle/ddpg/video/train/project-episode-4000.mp4.
+Moviepy - Writing video /home/sriniva3/RL_course/RL2023_project/project/results/SandingEnvMiddle/ddpg/video/train/project-episode-4000.mp4
+
+t:   0%|          | 0/498 [00:00<?, ?it/s, now=None]t:   6%|▋         | 32/498 [00:00<00:01, 314.36it/s, now=None]t:  13%|█▎        | 64/498 [00:00<00:01, 230.58it/s, now=None]t:  18%|█▊        | 89/498 [00:00<00:02, 198.39it/s, now=None]t:  22%|██▏       | 110/498 [00:00<00:01, 196.93it/s, now=None]t:  26%|██▋       | 131/498 [00:00<00:01, 189.53it/s, now=None]t:  30%|███       | 151/498 [00:00<00:01, 181.13it/s, now=None]t:  34%|███▍      | 170/498 [00:00<00:01, 181.40it/s, now=None]t:  38%|███▊      | 189/498 [00:00<00:01, 179.08it/s, now=None]t:  42%|████▏     | 208/498 [00:01<00:01, 181.10it/s, now=None]t:  46%|████▌     | 229/498 [00:01<00:01, 187.53it/s, now=None]t:  50%|█████     | 250/498 [00:01<00:01, 192.03it/s, now=None]t:  54%|█████▍    | 270/498 [00:01<00:01, 173.27it/s, now=None]t:  58%|█████▊    | 289/498 [00:01<00:01, 176.00it/s, now=None]t:  62%|██████▏   | 311/498 [00:01<00:00, 187.17it/s, now=None]t:  68%|██████▊   | 337/498 [00:01<00:00, 206.66it/s, now=None]t:  72%|███████▏  | 360/498 [00:01<00:00, 213.08it/s, now=None]t:  77%|███████▋  | 383/498 [00:01<00:00, 217.14it/s, now=None]t:  82%|████████▏ | 406/498 [00:02<00:00, 220.54it/s, now=None]t:  86%|████████▋ | 430/498 [00:02<00:00, 225.35it/s, now=None]t:  91%|█████████ | 453/498 [00:02<00:00, 226.51it/s, now=None]t:  96%|█████████▌| 476/498 [00:02<00:00, 227.19it/s, now=None]                                                               Moviepy - Done !
+Moviepy - video ready /home/sriniva3/RL_course/RL2023_project/project/results/SandingEnvMiddle/ddpg/video/train/project-episode-4000.mp4
+Episode 4000 Step 80020 finished. Average episode return: 0.7
+Episode 4100 Step 82020 finished. Average episode return: 0.86
+Episode 4200 Step 84020 finished. Average episode return: 0.67
+Episode 4300 Step 86020 finished. Average episode return: 0.71
+Episode 4400 Step 88020 finished. Average episode return: 0.89
+Episode 4500 Step 90020 finished. Average episode return: 0.9
+Episode 4600 Step 92020 finished. Average episode return: 0.99
+Episode 4700 Step 94020 finished. Average episode return: 0.85
+Episode 4800 Step 96020 finished. Average episode return: 0.74
+Episode 4900 Step 98020 finished. Average episode return: 0.76
+Moviepy - Building video /home/sriniva3/RL_course/RL2023_project/project/results/SandingEnvMiddle/ddpg/video/train/project-episode-5000.mp4.
+Moviepy - Writing video /home/sriniva3/RL_course/RL2023_project/project/results/SandingEnvMiddle/ddpg/video/train/project-episode-5000.mp4
+
+t:   0%|          | 0/604 [00:00<?, ?it/s, now=None]t:   2%|▏         | 13/604 [00:00<00:04, 129.48it/s, now=None]t:   8%|▊         | 46/604 [00:00<00:02, 237.70it/s, now=None]t:  12%|█▏        | 70/604 [00:00<00:02, 203.06it/s, now=None]t:  15%|█▌        | 91/604 [00:00<00:02, 194.81it/s, now=None]t:  18%|█▊        | 111/604 [00:00<00:02, 185.63it/s, now=None]t:  22%|██▏       | 130/604 [00:00<00:02, 183.17it/s, now=None]t:  25%|██▍       | 149/604 [00:00<00:02, 185.20it/s, now=None]t:  28%|██▊       | 169/604 [00:00<00:02, 189.37it/s, now=None]t:  31%|███▏      | 189/604 [00:00<00:02, 192.55it/s, now=None]t:  35%|███▍      | 210/604 [00:01<00:01, 197.44it/s, now=None]t:  38%|███▊      | 231/604 [00:01<00:01, 199.95it/s, now=None]t:  42%|████▏     | 252/604 [00:01<00:01, 185.63it/s, now=None]t:  45%|████▍     | 271/604 [00:01<00:01, 184.64it/s, now=None]t:  49%|████▊     | 293/604 [00:01<00:01, 191.15it/s, now=None]t:  52%|█████▏    | 315/604 [00:01<00:01, 198.27it/s, now=None]t:  56%|█████▌    | 338/604 [00:01<00:01, 206.47it/s, now=None]t:  59%|█████▉    | 359/604 [00:01<00:01, 203.96it/s, now=None]t:  63%|██████▎   | 380/604 [00:01<00:01, 203.77it/s, now=None]t:  66%|██████▋   | 401/604 [00:02<00:01, 201.84it/s, now=None]t:  70%|██████▉   | 422/604 [00:02<00:00, 203.31it/s, now=None]t:  74%|███████▎  | 445/604 [00:02<00:00, 209.67it/s, now=None]t:  78%|███████▊  | 469/604 [00:02<00:00, 218.46it/s, now=None]t:  82%|████████▏ | 493/604 [00:02<00:00, 222.28it/s, now=None]t:  85%|████████▌ | 516/604 [00:02<00:00, 215.94it/s, now=None]t:  89%|████████▉ | 538/604 [00:02<00:00, 215.28it/s, now=None]t:  93%|█████████▎| 560/604 [00:02<00:00, 209.17it/s, now=None]t:  96%|█████████▋| 582/604 [00:02<00:00, 211.71it/s, now=None]t: 100%|██████████| 604/604 [00:03<00:00, 206.08it/s, now=None]                                                               Moviepy - Done !
+Moviepy - video ready /home/sriniva3/RL_course/RL2023_project/project/results/SandingEnvMiddle/ddpg/video/train/project-episode-5000.mp4
+Episode 5000 Step 100020 finished. Average episode return: 0.6
+Episode 5100 Step 102020 finished. Average episode return: 0.91
+Episode 5200 Step 104020 finished. Average episode return: 0.87
+Episode 5300 Step 106020 finished. Average episode return: 0.77
+Episode 5400 Step 108020 finished. Average episode return: 0.79
+Episode 5500 Step 110020 finished. Average episode return: 0.75
+Episode 5600 Step 112020 finished. Average episode return: 0.73
+Episode 5700 Step 114020 finished. Average episode return: 0.78
+Episode 5800 Step 116020 finished. Average episode return: 0.7
+Episode 5900 Step 118020 finished. Average episode return: 0.87
+Moviepy - Building video /home/sriniva3/RL_course/RL2023_project/project/results/SandingEnvMiddle/ddpg/video/train/project-episode-6000.mp4.
+Moviepy - Writing video /home/sriniva3/RL_course/RL2023_project/project/results/SandingEnvMiddle/ddpg/video/train/project-episode-6000.mp4
+
+t:   0%|          | 0/576 [00:00<?, ?it/s, now=None]t:   3%|▎         | 18/576 [00:00<00:03, 177.37it/s, now=None]t:   8%|▊         | 46/576 [00:00<00:02, 234.85it/s, now=None]t:  12%|█▏        | 70/576 [00:00<00:02, 205.91it/s, now=None]t:  16%|█▌        | 91/576 [00:00<00:02, 204.91it/s, now=None]t:  20%|█▉        | 113/576 [00:00<00:02, 207.90it/s, now=None]t:  23%|██▎       | 134/576 [00:00<00:02, 204.40it/s, now=None]t:  27%|██▋       | 155/576 [00:00<00:02, 202.97it/s, now=None]t:  31%|███       | 176/576 [00:00<00:01, 201.28it/s, now=None]t:  34%|███▍      | 198/576 [00:00<00:01, 205.29it/s, now=None]t:  38%|███▊      | 219/576 [00:01<00:01, 205.56it/s, now=None]t:  42%|████▏     | 241/576 [00:01<00:01, 208.27it/s, now=None]t:  45%|████▌     | 262/576 [00:01<00:01, 207.03it/s, now=None]t:  49%|████▉     | 283/576 [00:01<00:01, 207.85it/s, now=None]t:  53%|█████▎    | 305/576 [00:01<00:01, 209.67it/s, now=None]t:  57%|█████▋    | 329/576 [00:01<00:01, 218.65it/s, now=None]t:  61%|██████    | 352/576 [00:01<00:01, 221.16it/s, now=None]t:  65%|██████▌   | 375/576 [00:01<00:00, 217.87it/s, now=None]t:  69%|██████▉   | 397/576 [00:01<00:00, 217.49it/s, now=None]t:  73%|███████▎  | 419/576 [00:01<00:00, 217.96it/s, now=None]t:  77%|███████▋  | 441/576 [00:02<00:00, 218.15it/s, now=None]t:  80%|████████  | 463/576 [00:02<00:00, 215.45it/s, now=None]t:  84%|████████▍ | 485/576 [00:02<00:00, 216.10it/s, now=None]t:  89%|████████▊ | 511/576 [00:02<00:00, 228.53it/s, now=None]t:  93%|█████████▎| 537/576 [00:02<00:00, 235.45it/s, now=None]t:  97%|█████████▋| 561/576 [00:02<00:00, 232.84it/s, now=None]                                                               /var/spool/slurmd/job25290256/slurm_script: line 7: 29506 Killed                  python task1_training_scripts.py
+slurmstepd: error: Detected 1 oom-kill event(s) in StepId=25290256.batch. Some of your processes may have been killed by the cgroup out-of-memory handler.

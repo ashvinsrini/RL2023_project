@@ -1,0 +1,23 @@
+/share/apps/anaconda-ci/fgci-centos7-anaconda/software/anaconda/2023-04/e0d50272/lib/python3.10/site-packages/gymnasium/spaces/box.py:130: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  gym.logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+/home/sriniva3/RL_course/RL2023_project/project/utils/recorder.py:250: UserWarning: [33mWARN: Overwriting existing videos at /home/sriniva3/RL_course/RL2023_project/project/results/SandingEnvMiddle/ddpg/video/train folder (try specifying a different `video_folder` for the `RecordVideo` wrapper if this is not desired)[0m
+  logger.warn(
+/share/apps/anaconda-ci/fgci-centos7-anaconda/software/anaconda/2023-04/e0d50272/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:164: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting numpy array dtype to be float32, actual type: float64[0m
+  logger.warn(
+/share/apps/anaconda-ci/fgci-centos7-anaconda/software/anaconda/2023-04/e0d50272/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:188: UserWarning: [33mWARN: The obs returned by the `reset()` method is not within the observation space.[0m
+  logger.warn(f"{pre} is not within the observation space.")
+/share/apps/anaconda-ci/fgci-centos7-anaconda/software/anaconda/2023-04/e0d50272/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:300: UserWarning: [33mWARN: RGB-array rendering should return a numpy array, got <class 'list'>[0m
+  logger.warn(
+Moviepy - Building video /home/sriniva3/RL_course/RL2023_project/project/results/SandingEnvMiddle/ddpg/video/train/project-episode-0.mp4.
+Moviepy - Writing video /home/sriniva3/RL_course/RL2023_project/project/results/SandingEnvMiddle/ddpg/video/train/project-episode-0.mp4
+
+t:   0%|          | 0/1 [00:00<?, ?it/s, now=None]                                                  /share/apps/anaconda-ci/fgci-centos7-anaconda/software/anaconda/2023-04/e0d50272/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:164: UserWarning: [33mWARN: The obs returned by the `step()` method was expecting numpy array dtype to be float32, actual type: float64[0m
+  logger.warn(
+/share/apps/anaconda-ci/fgci-centos7-anaconda/software/anaconda/2023-04/e0d50272/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:188: UserWarning: [33mWARN: The obs returned by the `step()` method is not within the observation space.[0m
+  logger.warn(f"{pre} is not within the observation space.")
+Moviepy - Done !
+Moviepy - video ready /home/sriniva3/RL_course/RL2023_project/project/results/SandingEnvMiddle/ddpg/video/train/project-episode-0.mp4
+Moviepy - Building video /home/sriniva3/RL_course/RL2023_project/project/results/SandingEnvMiddle/ddpg/video/train/project-episode-0.mp4.
+Moviepy - Writing video /home/sriniva3/RL_course/RL2023_project/project/results/SandingEnvMiddle/ddpg/video/train/project-episode-0.mp4
+
+t:   0%|          | 0/484 [00:00<?, ?it/s, now=None]t:   8%|▊         | 37/484 [00:00<00:01, 367.56it/s, now=None]t:  15%|█▌        | 74/484 [00:00<00:01, 220.42it/s, now=None]t:  21%|██        | 100/484 [00:00<00:01, 209.79it/s, now=None]t:  25%|██▌       | 123/484 [00:00<00:01, 205.18it/s, now=None]t:  30%|██▉       | 145/484 [00:00<00:01, 205.38it/s, now=None]t:  35%|███▍      | 167/484 [00:00<00:01, 205.16it/s, now=None]t:  39%|███▉      | 188/484 [00:00<00:01, 203.09it/s, now=None]t:  43%|████▎     | 209/484 [00:00<00:01, 201.09it/s, now=None]t:  48%|████▊     | 230/484 [00:01<00:01, 201.65it/s, now=None]t:  52%|█████▏    | 251/484 [00:01<00:01, 198.98it/s, now=None]t:  56%|█████▌    | 271/484 [00:01<00:01, 195.40it/s, now=None]t:  61%|██████    | 293/484 [00:01<00:00, 202.15it/s, now=None]t:  65%|██████▍   | 314/484 [00:01<00:00, 202.25it/s, now=None]t:  69%|██████▉   | 335/484 [00:01<00:00, 204.11it/s, now=None]t:  74%|███████▎  | 356/484 [00:01<00:00, 203.88it/s, now=None]t:  78%|███████▊  | 377/484 [00:01<00:00, 202.07it/s, now=None]t:  82%|████████▏ | 398/484 [00:01<00:00, 198.47it/s, now=None]t:  87%|████████▋ | 419/484 [00:02<00:00, 200.88it/s, now=None]t:  91%|█████████ | 440/484 [00:02<00:00, 197.45it/s, now=None]t:  95%|█████████▌| 460/484 [00:02<00:00, 197.96it/s, now=None]t:  99%|█████████▉| 480/484 [00:02<00:00, 195.10it/s, now=None]                                                               
