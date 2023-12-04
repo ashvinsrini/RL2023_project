@@ -9,11 +9,57 @@ import torch.nn.functional as F
 import copy, time
 from pathlib import Path
 
+
+from torch import nn
+from collections import namedtuple
+# from torch.distributions import Categorical
+from torch.distributions import Normal, Independent
+
+import pickle, os, random, torch
+
+from collections import defaultdict
+import pandas as pd 
+import gymnasium as gym
+import matplotlib.pyplot as plt
+
+
+
 def to_numpy(tensor):
     return tensor.cpu().numpy().flatten()
 
 #class DDPGExtension(DDPGAgent):
     #pass
+    
+class Policy_new(nn.Module):
+    def __init__(self, state_dim, action_dim, max_action):
+        super().__init__()
+        self.max_action = max_action
+        self.actor = nn.Sequential(
+            nn.Linear(state_dim, 64), nn.ReLU(),
+            nn.Linear(64, 64), nn.ReLU(),
+            nn.Linear(64, 32), nn.ReLU(),
+            nn.Linear(32, action_dim)
+        )
+
+    def forward(self, state):
+        return self.max_action * torch.tanh(self.actor(state))
+
+
+# Critic class. The critic is represented by a neural network.
+class Critic_new(nn.Module):
+    def __init__(self, state_dim, action_dim):
+        super().__init__()
+        self.value = nn.Sequential(
+            nn.Linear(state_dim+action_dim, 64), nn.ReLU(),
+            nn.Linear(64, 64), nn.ReLU(),
+            nn.Linear(64, 32), nn.ReLU(),
+            nn.Linear(32, 1))
+
+    def forward(self, state, action):
+        x = torch.cat([state, action], 1)
+        return self.value(x) # output shape [batch, 1]
+    
+    
     
 class DDPGExtension(DDPGAgent):
     def __init__(self, config=None):
@@ -22,7 +68,7 @@ class DDPGExtension(DDPGAgent):
         # Additional initialization or modifications can be done here if needed.
         state_dim = self.observation_space_dim
         self.action_dim = self.action_space_dim
-        self.q2 = Critic(state_dim, self.action_dim).to(self.device)
+        self.q2 = Critic_new(state_dim, self.action_dim).to(self.device)
         self.q2_target = copy.deepcopy(self.q2)
         self.q2_optim = torch.optim.Adam(self.q2.parameters(), lr=float(self.lr))
         
@@ -31,6 +77,15 @@ class DDPGExtension(DDPGAgent):
         self.policy_noise = 0.3
         #self.noise_clip = self.cfg.noise_clip        
         
+        # Reloading the new configuration of policy and critic network ###########
+        self.pi = Policy_new(state_dim, self.action_dim, self.max_action).to(self.device)
+        self.pi_target = copy.deepcopy(self.pi)
+        self.pi_optim = torch.optim.Adam(self.pi.parameters(), lr=float(self.lr))
+        
+        
+        self.q = Critic_new(state_dim, self.action_dim).to(self.device)
+        self.q_target = copy.deepcopy(self.q)
+        self.q_optim = torch.optim.Adam(self.q.parameters(), lr=float(self.lr))    
 
     def _update(self):
         self.update_counter += 1  # Increment the update counter

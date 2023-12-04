@@ -44,7 +44,10 @@ class DDPGAgent(BaseAgent):
         self.buffer_head = 0 
         self.random_transition = 5000 # collect 5k random data for better exploration
         self.max_episode_steps=self.cfg.max_episode_steps
-    
+        
+        # Ornstein-Uhlenbeck Process parameters
+        self.ou_mu = np.zeros(self.action_dim)
+        self.ou_noise = np.zeros(self.action_dim)    
 
     def update(self,):
         """ After collecting one trajectory, update the pi and q for #transition times: """
@@ -112,7 +115,18 @@ class DDPGAgent(BaseAgent):
 
 
         return {}
+    
+    def ou_process(self, action_dim):
+            # Ornstein-Uhlenbeck Process for exploration noise
+            theta = 0.15
+            sigma = 0.2
+            dt = 1e-2
 
+            self.ou_noise = (
+                self.ou_noise
+                + theta * (self.ou_mu - self.ou_noise) * dt
+                + sigma * np.sqrt(dt) * np.random.normal(size=action_dim)
+            )
     
     @torch.no_grad()
     def get_action(self, observation, evaluation=False):
@@ -137,6 +151,8 @@ class DDPGAgent(BaseAgent):
             #pdb.set_trace()
             # if evaluation equals False, add normal noise to the action, where the std of the noise is expl_noise
             if not evaluation:
+                #self.ou_process(action_dim = self.action_dim)
+                #action += self.ou_noise
                 action = action + torch.normal(0, expl_noise, size=action.shape).to(self.device)
 
             # Clip the action to ensure it's within the range
