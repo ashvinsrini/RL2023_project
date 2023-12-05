@@ -23,6 +23,8 @@ class DDPGAgent(BaseAgent):
         self.max_action = self.cfg.max_action
         self.lr=self.cfg.lr
         
+        
+        
         self.pi = Policy(state_dim, self.action_dim, self.max_action).to(self.device)
         self.pi_target = copy.deepcopy(self.pi)
         self.pi_optim = torch.optim.Adam(self.pi.parameters(), lr=float(self.lr))
