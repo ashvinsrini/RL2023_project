@@ -7,6 +7,7 @@ import torch.nn.functional as F
 import copy, time
 from pathlib import Path
 import pdb
+import torch.distributions as distributions
 
 def to_numpy(tensor):
     return tensor.cpu().numpy().flatten()
@@ -101,7 +102,14 @@ class DDPGAgent(BaseAgent):
 
         # compute actor loss
         actor_loss = -self.q(batch.state, self.pi(batch.state)).mean()
-
+        
+        # Add entropy regularization
+        entropy_weight = 0.01  # You can adjust this weight
+        logits = self.pi(batch.state)
+        entropy = distributions.Dirichlet(logits=logits).entropy().mean()
+        actor_loss -= entropy_weight * entropy       
+        
+        
         # optimize the actor
         self.pi_optim.zero_grad()
         actor_loss.backward()

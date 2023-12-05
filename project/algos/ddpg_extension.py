@@ -68,7 +68,7 @@ class DDPGExtension(DDPGAgent):
         # Additional initialization or modifications can be done here if needed.
         state_dim = self.observation_space_dim
         self.action_dim = self.action_space_dim
-        self.q2 = Critic_new(state_dim, self.action_dim).to(self.device)
+        self.q2 = Critic(state_dim, self.action_dim).to(self.device)
         self.q2_target = copy.deepcopy(self.q2)
         self.q2_optim = torch.optim.Adam(self.q2.parameters(), lr=float(self.lr))
         
@@ -78,12 +78,12 @@ class DDPGExtension(DDPGAgent):
         #self.noise_clip = self.cfg.noise_clip        
         
         # Reloading the new configuration of policy and critic network ###########
-        self.pi = Policy_new(state_dim, self.action_dim, self.max_action).to(self.device)
+        self.pi = Policy(state_dim, self.action_dim, self.max_action).to(self.device)
         self.pi_target = copy.deepcopy(self.pi)
         self.pi_optim = torch.optim.Adam(self.pi.parameters(), lr=float(self.lr))
         
         
-        self.q = Critic_new(state_dim, self.action_dim).to(self.device)
+        self.q = Critic(state_dim, self.action_dim).to(self.device)
         self.q_target = copy.deepcopy(self.q)
         self.q_optim = torch.optim.Adam(self.q.parameters(), lr=float(self.lr))    
 
